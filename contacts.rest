@@ -49,7 +49,7 @@ GET https://cse341-80ip.onrender.com/contacts
 GET https://cse341-80ip.onrender.com/contacts/681398294fd361d08dfbb7a2 
 
 ### Create/POST Contact
-POST https://cse341-80ip.onrender.com HTTP/1.1
+POST https://cse341-80ip.onrender.com/contacts HTTP/1.1
 content-type: application/json
 
 {
@@ -61,7 +61,7 @@ content-type: application/json
 }
 
 ### PUT contact
-PUT https://cse341-80ip.onrender.com HTTP/1.1
+PUT https://cse341-80ip.onrender.com/contacts/681d11ad7e9a712c69b36747 HTTP/1.1
 content-type: application/json
 
 {
@@ -73,4 +73,4 @@ content-type: application/json
 }
 
 ### DELETE Contact
-DELETE https://cse341-80ip.onrender.com HTTP/1.1
+DELETE https://cse341-80ip.onrender.com/contacts/681d11ad7e9a712c69b36747 HTTP/1.1

@@ -49,11 +49,11 @@ GET https://cse341-80ip.onrender.com/contacts
 GET https://cse341-80ip.onrender.com/contacts/681398294fd361d08dfbb7a2 
 
 ### Create/POST Contact
-POST render link here HTTP/1.1
+POST https://cse341-80ip.onrender.com HTTP/1.1
 content-type: application/json
 
 {
-    "firstName":"Jason",
+    "firstName":"Mark",
     "lastName":"Jones",
     "email":"jones@email.com",
     "favoriteColor":"Orange",
@@ -61,16 +61,16 @@ content-type: application/json
 }
 
 ### PUT contact
-PUT render + id HTTP/1.1
+PUT https://cse341-80ip.onrender.com HTTP/1.1
 content-type: application/json
 
 {
-    "firstName":"Jason",
+    "firstName":"Mark",
     "lastName":"Jones",
     "email":"jones@email.com",
-    "favoriteColor":"Red",
+    "favoriteColor":"Blue",
     "birthday":"09/15/1998"
 }
 
 ### DELETE Contact
-DELETE render + id HTTP/1.1
+DELETE https://cse341-80ip.onrender.com HTTP/1.1

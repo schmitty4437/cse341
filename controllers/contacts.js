@@ -111,7 +111,6 @@ const updateContact = async (req, res) => {
  Week 3 - DELETE contact function
 ******************************/
 const deleteContact = async (req, res) => {
-
   // Getting userID from URL
   const userId = req.params.id;
 
@@ -125,7 +124,7 @@ const deleteContact = async (req, res) => {
     .collection('contacts')
     .deleteOne({ _id: new ObjectId(userId) });
   if (result.deletedCount > 0) {
-    res.status(204).send();
+    res.status(200).send();
   } else {
     res.status(404).json({ error: 'Contact not found' });
   }

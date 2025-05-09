@@ -6,12 +6,12 @@ const { connectDb } = require('./db/connection');
 const nameRouter = require('./routes/index');
 const contactsRouter = require('./routes/contacts');
 
-// Allows requests from any origin
+// Enable CORS. Allows requests from any origin. Allows resources on my server to be requested.
 //allow all origins, allow post/get, allow content-type
 app.use((req, res, next) => {
   res.setHeader('Access-Control-Allow-Origin', '*');
-  res.setHeader('Acces-Controll-Allow-Methods', 'GET, POST, PUT, DELETE');
-  res.setHeader('Acces-Controll-Allow-Methods', 'Content-Type');
+  res.setHeader('Access-Controll-Allow-Methods', 'GET, POST, PUT, DELETE');
+  res.setHeader('Access-Controll-Allow-Methods', 'Content-Type');
   next();
 });
 

@@ -7,7 +7,9 @@
   },
   "host": "cse341-80ip.onrender.com",
   "basePath": "/",
-  "schemes": ["https"],
+  "schemes": [
+    "https"
+  ],
   "paths": {
     "/api-docs": {
       "get": {
@@ -22,8 +24,6 @@
     "/contacts/": {
       "get": {
         "description": "",
-        "produces": ["application/json"],
-        "parameters": [],
         "responses": {
           "200": {
             "description": "OK"

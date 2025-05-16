@@ -10,8 +10,12 @@ const contactsRouter = require('./routes/contacts');
 //allow all origins, allow post/get, allow content-type
 app.use((req, res, next) => {
   res.setHeader('Access-Control-Allow-Origin', '*');
-  res.setHeader('Access-Controll-Allow-Methods', 'GET, POST, PUT, DELETE');
-  res.setHeader('Access-Controll-Allow-Methods', 'Content-Type');
+  res.setHeader(
+    'Access-Controll-Allow-Headers',
+    'Origin, X-Requested-With, Content-Type, Accept, Z-key'
+  );
+  res.setHeader('Content-Type', 'application/json');
+  res.setHeader('Access-Controll-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONs');
   next();
 });
 

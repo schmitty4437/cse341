@@ -61,7 +61,7 @@ content-type: application/json
 }
 
 ### PUT contact
-PUT https://cse341-80ip.onrender.com/contacts/6826aacb1c97d67530ff1005 HTTP/1.1
+PUT https://cse341-80ip.onrender.com/contacts/6826b302d1e6e54c5d9e4ab6 HTTP/1.1
 content-type: application/json
 
 {
@@ -73,4 +73,4 @@ content-type: application/json
 }
 
 ### DELETE Contact
-DELETE https://cse341-80ip.onrender.com/contacts/6826aacb1c97d67530ff1005 HTTP/1.1
+DELETE https://cse341-80ip.onrender.com/contacts/6826b302d1e6e54c5d9e4ab6 HTTP/1.1

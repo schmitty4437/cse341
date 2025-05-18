@@ -9,6 +9,7 @@ const nameRouter = require('./routes/index');
 // Enable CORS. Allows requests from any origin. Allows resources on my server to be requested.
 //allow all origins, allow post/get, allow content-type
 app.use((req, res, next) => {
+  res.setHeader('Access-Control-Allow-Origin', '*');
   res.setHeader(
     'Access-Control-Allow-Headers',
     'Origin, X-Requested-With, Content-Type, Accept, Z-key'

@@ -10,20 +10,14 @@ const contactsRouter = require('./routes/contacts');
 //allow all origins, allow post/get, allow content-type
 app.use((req, res, next) => {
   res.setHeader('Access-Control-Allow-Origin', '*');
-  res.setHeader(
-    'Access-Control-Allow-Headers',
-    'Content-Type, Origin, X-Requested-With, Accept, Z-key'
-  );
-  res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS');
+  res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
+  res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE');
   next();
 });
 
 // This parse incoming json request bodies
 // Basically takes JSON data and converts it to a format our program can use
 app.use(express.json());
-
-// Serve static files (like Swagger UI’s CSS and JavaScript) from the public folder
-app.use(express.static('public'));
 
 app.use('/', nameRouter);
 // sends requests with /contacts to routes/contacts.js
